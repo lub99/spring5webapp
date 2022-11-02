@@ -13,7 +13,8 @@
         <th>Title</th>
         <th>Publisher</th>
     </tr>
-    <tr th:each="book : ${books}"> < ! books is property in Model object ╌╌>
+    <!-- books is property in Model object and is set by controller method -->
+    <tr th:each="book : ${books}">
         <td th:text="${book.id}">123</td>
         <td th:text="${book.title}">Spring in Action</td>
         <td th:text="${book.publisher.name}">ML</td>
